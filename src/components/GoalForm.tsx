@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import coinSprite from "../assets/media/pound-coin.png";
+import chestOpen from '../assets/media/chest-open.png'
+import chestClosed from "../assets/media/chest-closed.png";
 
 interface GoalFormProps {
   onAddGoal: (
@@ -33,7 +35,11 @@ const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal }) => {
   return (
     <form onSubmit={submitHandler}>
       <div>
+        <img src={chestOpen} alt="8-bit-style open treasure chest"
+             className="tiny-icon"/>
         <label htmlFor="title" className="label">Goal</label>
+        <img src={chestOpen} alt="8-bit-style open treasure chest"
+             className="tiny-icon"/>
         <input id="title"
                type="text"
                value={title}
