@@ -1,4 +1,5 @@
 import React from 'react';
+import coinSprite from '../assets/media/pound-coin.png';
 
 interface Goal {
   title: string;
@@ -18,7 +19,9 @@ const GoalTracker: React.FC<GoalTrackerProps> = ({ goals }) => {
       <ul>
         {goals.map((goal, index) => (
           <li key={index} className="goal-item">
-            {goal.title} - ${goal.amount} by {goal.date}
+            {goal.title} -
+            <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon" />
+            {goal.amount} by {goal.date}
           </li>
         ))}
       </ul>

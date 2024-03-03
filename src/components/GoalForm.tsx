@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import coinSprite from "../assets/media/pound-coin.png";
 
 interface GoalFormProps {
   onAddGoal: (
@@ -40,7 +41,13 @@ const GoalForm: React.FC<GoalFormProps> = ({ onAddGoal }) => {
         />
       </div>
       <div>
-        <label htmlFor="amount">Amount Needed (£)</label>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
+        <label htmlFor="amount">Amount Needed</label>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
+        <img src={coinSprite} alt="8-bit-style GBP coin" className="tiny-icon"/>
         <input id="amount"
                type="number"
                value={amount}

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import GoalForm from './components/GoalForm';
 import GoalTracker from './components/GoalTracker';
 
+import './App.css';
+
+
 interface Goal {
   title: string;
   amount: number;
@@ -16,7 +19,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <GoalForm onAddGoal={addGoalHandler} />
       <GoalTracker goals={goals} />
     </div>
