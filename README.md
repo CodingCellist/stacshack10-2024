@@ -1,8 +1,66 @@
-# StacsHack 10 2024
+# 8-Bit Goal Tracker -- StacsHack 10 2024
 
 This project was created for the 10th StacsHack, 2024-03-02 to 2024-03-03.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Since the theme was "8-Bit" (taken at random from the past 9 themes), my
+original idea was a JRPG-style inventory management system for financial assets
+(BlackRock had a "financial literacy" challenge). However, it turns out those
+are work, and I have never done any React, so with a good night's sleep and 2
+hours to go, I instead decided to quickly hack together a goals tracker.
+Buttons, text-fields, and forms; those I at least understand  ^^
+
+
+## FAQ
+
+* Does it work? Yes (which I'm honestly surprised by)
+* Can you delete goals? No, that would be defeatist; don't let your memes be
+    dreams!
+
+
+## Presentation
+
+Didn't have time to make one, but DevPost forces you to write a bit about how
+the project went, and the result is basically everything I had to say anyhow.
+Please enjoy (copied verbatim):
+
+### Inspiration
+
+Desperation with 2 hours to go
+
+### What it does
+
+Tracks some goals I guess
+
+### How we built it
+
+FAST
+
+### Challenges we ran into
+
+The unyielding march of time
+
+### Accomplishments that we're proud of
+
+Actually submitting
+
+### What we learned
+
+Best way to do software
+
+### What's next for 8-bit goal tracker
+
+World domination
+
+### Built With
+
+    react
+
+
+## LICENSE
+
+Should it in any way be relevant, this project is licensed under the terms of
+the BSD-3-Clause license (see the `LICENSE` file).
+
 
 ## Available Scripts
 
@@ -16,11 +74,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -32,27 +85,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you
-can `eject` at any time. This command will remove the single build dependency
-from your project.
-
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn’t feel obligated to use this
-feature. However we understand that this tool wouldn’t be useful if you couldn’t
-customize it when you are ready for it.
-
-
-## LICENSE
-
-This project is licensed under the terms of the BSD-3-Clause license (see 
-the `LICENSE` file).
