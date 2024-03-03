@@ -1,24 +1,26 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import GoalForm from './components/GoalForm';
+import GoalTracker from './components/GoalTracker';
 
-import Inventory from './components/Inventory';
+interface Goal {
+  title: string;
+  amount: number;
+  date: string;
+}
 
-function App() {
+const App: React.FC = () => {
+  const [goals, setGoals] = useState<Goal[]>([]);
+
+  const addGoalHandler = (goal: Goal) => {
+    setGoals((prevGoals) => [...prevGoals, goal]);
+  };
+
   return (
-    <div className="three-col">
-      <div className="item-col">
-        <Inventory name="foo" description="lorem ipsum dolor set amet" health={10} pollution={20} />
-      </div>
-
-      <div className="item-col">
-        <Inventory name="Inventory" description="Currently empty" health={0} pollution={0} />
-      </div>
-
-      <div className="stat-col">
-
-      </div>
+    <div>
+      <GoalForm onAddGoal={addGoalHandler} />
+      <GoalTracker goals={goals} />
     </div>
   );
-}
+};
 
 export default App;
